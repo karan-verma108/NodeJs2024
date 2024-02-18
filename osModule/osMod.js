@@ -15,4 +15,16 @@ console.log(`Available memory in my system is ${freeMemory} GB`); */
 // let architecture = os.arch();
 // console.log(architecture);
 
-console.log(os.type());
+// console.log(os.type());
+
+// console.log(os.release());
+
+// console.log(os.homedir());
+
+// console.log(os.tmpdir());
+
+// console.log(os.uptime());
+
+// console.log(os.userInfo());
+
+// console.log(os.cpus());
