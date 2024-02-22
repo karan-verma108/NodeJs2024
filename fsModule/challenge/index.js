@@ -35,10 +35,12 @@ const fs = require('fs');
 // fs.rmdirSync('./thapa');
 // fs.mkdirSync('thapa');
 
-fs.rmdir('./thapa', (err)=>{
-    if(err){
-        console.error('folder not removed');
-    }else{
-        console.log('folder removed');
-    }
-});
+// fs.rmdir('./thapa', (err)=>{
+//     if(err){
+//         console.error('folder not removed');
+//     }else{
+//         console.log('folder removed');
+//     }
+// });
+
+// fs.unlinkSync('../../index.html');
