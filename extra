@@ -4,3 +4,8 @@ REPL
 3: Multi line code / loops
 4: use(_) to get the last result
 5: we can use editor mode
+
+ else if (req.url == '/userapi') {
+        res.writeHead(200, { 'Content-type': 'application/json' });
+        res.end(`<h1> user api page </h1>`);
+    }
