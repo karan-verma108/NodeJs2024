@@ -1,0 +1,7 @@
+This is a new text file
+created for the only purpose of it 
+getting fetche first
+by using simple fs module techniques (realFile)
+and then using createReadStream using stream module
+
+and yes it finally worked
