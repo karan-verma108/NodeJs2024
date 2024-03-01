@@ -15,19 +15,25 @@ server.on('request', (req, res) => {
     });*/
 
     const stream = fs.createReadStream('./myfile.txt');
+    // second way of doing the same task, using streams but old method 
 
-    stream.on('data', (chunkData) => {
-        res.write(chunkData);
-    });
+    // stream.on('data', (chunkData) => {
+    //     res.write(chunkData);
+    // });
 
-    stream.on('end', () => {
-        res.end();
-    });
+    // stream.on('end', () => {
+    //     res.end();
+    // });
 
-    stream.on('error', (err) => {
-        console.error(err);
-        res.end('<h1> File not found 404! </h1>');
-    });
+    // stream.on('error', (err) => {
+    //     console.error(err);
+    //     res.end('<h1> File not found 404! </h1>');
+    // });
+
+    // 3rd way, efficient way 
+
+    stream.pipe(res);
+
 });
 
 server.listen(port, () => {
